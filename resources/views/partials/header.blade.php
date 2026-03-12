@@ -6,13 +6,10 @@
             <a href="#" class="hover:text-blue-600">Admission</a>
             <a href="/about" class="hover:text-blue-600">About Us</a>
             <a href="#" class="hover:text-blue-600">Administration</a>
-            <a href="#" class="hover:text-blue-600">Programs of Study</a>
             <a href="#" class="hover:text-blue-600">Academics</a>
-            <a href="#" class="hover:text-blue-600">Facilities</a>
+            <a href="{{route('student.list')}}" class="hover:text-blue-600">Students</a>
             <a href="#" class="hover:text-blue-600">Events</a>
-            <a href="#" class="hover:text-blue-600">Placement</a>
-            <a href="#" class="hover:text-blue-600">NAAC</a>
-            <a href="#" class="hover:text-blue-600">Clubs</a>
+            <a href="/contact" class="hover:text-blue-600">Contact</a>
         </nav>
     </div>
 </header>

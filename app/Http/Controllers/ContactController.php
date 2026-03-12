@@ -2,6 +2,8 @@
 
 namespace App\Http\Controllers;
 
+use App\Models\Contact;
+
 use Illuminate\Http\Request;
 
 class ContactController extends Controller
@@ -24,6 +26,21 @@ class ContactController extends Controller
             ]
         );
 
+        Contact::Create([
+            'name' => $request->fullname,
+            'email' => $request->youremail,
+            'phone' => $request->yourphone,
+            'message' => $request->yourmessage
+        ]);
+
         return back()->with('success', 'Message has been sent!');
+    }
+
+    public function list()
+    {
+        $contacts = Contact::get();
+        //echo "<pre>";
+        //print_r($contact);
+        return view('pages/contact-list', compact('contacts'));
     }
 }

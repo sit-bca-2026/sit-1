@@ -54,11 +54,13 @@
                 class="w-full border border-gray-300 p-3 rounded" />
 
             <input
+                name="yourphone"
                 type="text"
                 placeholder="Phone Number"
                 class="w-full border border-gray-300 p-3 rounded" />
 
             <textarea
+                name="yourmessage"
                 rows="4"
                 placeholder="Your Message"
                 class="w-full border border-gray-300 p-3 rounded"></textarea>
